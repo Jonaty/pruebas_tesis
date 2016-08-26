@@ -8,7 +8,10 @@
 
 
 
-<p>{{ "Nombre: " . $users->nombre . " Apellido: " . $users->apellido . " Y vivo en: " . $users->direccion }}</p>
+@foreach($users as $user)
 
+<li>{{ $user->nombre }}</li>
 
-@endsection
+@endforeach
+
+@endsection                                                                 
